@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background-color: cadetblue;
+    height:100vh;
+    width:80%;
+}
+
+form{
+    background-color: rgba(0, 0, 0, 0.654);
+    border:2px solid #000;
+    border-radius: 20px;
+    padding: 1rem;
+
+    /* place content of the form in center*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*place the form in the center of the ".calculator"  div"*/
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.calculator > form > div > input{
+    height:60px;
+    width:60px;
+
+    margin:1rem;
+    /* border:2px solid red; */
+    border-radius: 50%;
+    border:none;
+    outline:none;
+
+    font-size: 2rem;
+}
+
+.calculator > form > .display > input{
+   height:10vh;
+   width:400px;
+
+   margin:2rem;
+   padding:1em;
+   outline:none;
+   border:none;
+   border-radius: 20px; 
+
+   font-size: 1rem;
+   font-weight: bold;
+   color:rgb(64, 65, 65);
+
+   /* border:2px solid blue; */
+ 
+}
+
+.calculator > form >  :not(div:nth-child(1)) > input:hover{
+   background-color: #000;
+   color:#fff;
+}
+
+.calculator > form > .div1{
+    /* border: 2px solid blue; */
+    width:370px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculator > form > .div6 > input{
+    width:250px;
+    border-radius:5px;
+}
+
+.calculator > form > div > .operator {
+   background-color: rgb(255, 149, 0);
+}
+
+.calculator > form >  div > .operator:hover{
+    background-color: #000;
+    color:rgb(255,149,0);
+}
+
+.calculator > form > div > .equal-to-operator {
+    background-color: aquamarine;
+}
+
+.calculator > form > div > .equal-to-operator:hover {
+    color: aquamarine;
+}
+
+
